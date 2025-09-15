@@ -30,10 +30,7 @@
             sum += absI;
         }
         
-
         cout << sum;
-
-
 
         return 0;
     }
