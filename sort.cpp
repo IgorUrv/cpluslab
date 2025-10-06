@@ -5,10 +5,9 @@
     using namespace std;
 
 void  sort(int arr[] , int lenght){
-    bool needSort = true;
 
-    while (needSort) {
-        needSort = false;
+    for (int  i = 0; i < lenght - 1; i++)
+    {
         for (int  j = 0; j < lenght - 1 - i; j++)
         {
             if (arr[j] > arr[j+1])
@@ -16,7 +15,6 @@ void  sort(int arr[] , int lenght){
                 int temp = arr[j+1];
                 arr[j+1] = arr[j];
                 arr[j] = temp;
-                needSort = true;
             }
             
         }
